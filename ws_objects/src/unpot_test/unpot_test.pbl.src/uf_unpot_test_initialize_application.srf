@@ -1,0 +1,12 @@
+﻿$PBExportHeader$uf_unpot_test_initialize_application.srf
+global type uf_unpot_test_initialize_application from function_object
+end type
+
+forward prototypes
+global subroutine uf_unpot_test_initialize_application ()
+end prototypes
+
+global subroutine uf_unpot_test_initialize_application ();
+gn_unpot_test_application = uf_unpot_test_create_application()
+end subroutine
+

@@ -1,0 +1,6 @@
+Save Format v3.0(19990112)
+@begin Targets
+ 0 "src\\test.pbt";
+@end;
+DefaultTarget "src\\test.pbt";
+DefaultRemoteTarget "src\\test.pbt";
