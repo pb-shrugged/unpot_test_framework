@@ -17,7 +17,7 @@ Now add it to your unpot.deps.ini
 
 ```ini
 [pb-shrugged/unpot_test_framework]
-tag=0.0.1
+tag=v0.0.1
 asset_name=unpot_test_v0.0.1.zip
 repository=https://github.com/pb-shrugged/unpot_test_framework
 ```
