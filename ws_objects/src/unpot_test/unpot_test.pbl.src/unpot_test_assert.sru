@@ -28,9 +28,6 @@ return lb_result
 end function
 
 public subroutine fail (string message_expected, string message_error);
-// TODO: Use SignalError to acts like gtest expect, non-fatal failure
-// SignalError(gn_unpot_test_application.SIGNAL_ERROR_ASSERT_FAIL, message_error)
-
 unpot_test_rterror_assert_fail rterror
 
 rterror = create unpot_test_rterror_assert_fail
