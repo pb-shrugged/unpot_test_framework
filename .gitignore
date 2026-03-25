@@ -1,3 +1,4 @@
 *.pbl
 *.usr.opt
 *.pbd
+/bin
