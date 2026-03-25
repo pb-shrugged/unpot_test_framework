@@ -53,7 +53,10 @@ Write-Host "Uploading asset to GitHub Release $Tag..." -ForegroundColor Cyan
 # Given the user's example, we use 'upload'.
 gh release upload $Tag $ZipFileName --repo pb-shrugged/unpot_test_framework --clobber
 
-# Optional cleanup of the temporary folder (but keep the zip)
+# Cleanup the temporary folder and the generated ZIP archive
 Remove-Item -Recurse -Force $ZipFolderName
+if (Test-Path $ZipFileName) {
+    Remove-Item $ZipFileName -Force
+}
 
 Write-Host "Done! Asset uploaded successfully." -ForegroundColor Green
